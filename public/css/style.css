@@ -324,7 +324,7 @@ button[type=submit].footer-form__button:hover, button[type=submit].footer-form__
 .more-link:hover{color:#153a4f;}
 .more-link:hover:before{background-position:-294px -11px;}
 .main-slider__image-wrapper{width:100%; height:100%; display:table;}
-.main-slider__image{width:100%; height:100%; display:table-cell; vertical-align:middle;}
+.main-slider__image{width:100%; height:100%; display:table-cell; vertical-align:middle; background-position:center center; background-repeat:no-repeat; background-size:cover;}
 .main-slider__image img{width:100%; max-width:1600px; margin:auto;}
 .main-slider__list .slick-dots{bottom:4%;}
 
@@ -2745,6 +2745,7 @@ a.basket-result__button{width:150px; min-width:150px;}
 
 .catalog-nav__list{padding:50px 0 10px 0;}
 .main-catalog__title-in, .main-catalog__title-box{min-height:0; padding:0;}
+.main-slider{ height:420px}
 }
 @media screen and (max-width:960px){	
 .header-nav-2-in__block{width:110px; margin:0 10px 0 0;}
@@ -3224,11 +3225,13 @@ input[type=text].footer-form__input{height:16px; padding:12px 0 10px; font:300 1
 
 /* главная */
 .main-slider{margin:0 0 22px 0; min-height:310px; position:relative;}
-.main-slider__list{height:auto !important; position:relative;}
+.main-slider__item{ height:100%!important}
+.main-slider .slick-track{ height:100%}
+/*.main-slider__list{height:auto !important; position:relative;}
 .main-slider__content{padding:24px 0 25px; background:#fff; bottom:0; position:relative; z-index:1;}
 .main-slider__fix{width:100%; position:absolute; top:0; left:0; z-index:0;}
 .main-slider__fix img{min-height:204px; max-height:300px;}
-.main-slider__image img{min-height:204px; max-height:300px; bottom:auto;}
+.main-slider__image img{min-height:204px; max-height:300px; bottom:auto;}*/
 .main-slider__title-1{margin:0 0 6px 0; padding:0 20px; font:300 18px/1.3 'MuseoSansCyrl';}
 .main-slider__title-2{margin:0 0 2px 0; padding:0 20px; font:300 12px/1.5 'MuseoSansCyrl';}
 .more-link{padding:0 11px 0 0; font-size:12px !important; left:2px;}
@@ -3239,7 +3242,7 @@ input[type=text].footer-form__input{height:16px; padding:12px 0 10px; font:300 1
 .slick-dots li a{width:6px; height:6px; display:inline-block; vertical-align:top; cursor:pointer; background:#bebebe; border-radius:10px; text-indent:-9999px; border:4px solid #fff;} 
 .slick-dots li.slick-active a{background:#59aedf !important; border-color:#c7e0ef !important;}
 .slick-dots li a:hover{background:#59aedf !important;}
-.main-slider__list .slick-dots{bottom:0;}
+.main-slider__list .slick-dots{bottom:15px;}
 .main-discount__slider-wrapper .slick-dots li a, .reviews-slider .reviews__list .slick-dots li a{border-color:#f8f8f8;}
 .main-discount__slider-wrapper .slick-dots, .main-articles__slider-wrapper .slick-dots{bottom:0; display:block;}
 
